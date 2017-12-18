@@ -39,5 +39,3 @@ if(CLANG_TIDY_EXE)
     set_target_properties(
         "${PROJECT_EXE}" PROPERTIES CXX_CLANG_TIDY
         "${CLANG_TIDY_PROPERTIES}"
-    )
-endif()
