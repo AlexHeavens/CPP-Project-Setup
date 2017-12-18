@@ -15,7 +15,7 @@ namespace project {
 
             void run() {
                 std::cout << "Controller executed.\n";
-                hasExecuted = true;
+                hasExecuted = false;
             }
 
             bool getHasExecuted() {
