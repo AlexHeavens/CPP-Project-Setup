@@ -1,3 +1,6 @@
+## IDE Files
+.idea/*
+
 ## C++
 # Prerequisites
 *.d
@@ -32,5 +35,5 @@
 *.out
 *.app
 
-# vim
+## vim
 *.swp

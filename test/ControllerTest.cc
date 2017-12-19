@@ -1,25 +1,26 @@
 #include <gtest/gtest.h>
 
-#include "Controller.hh"
+#include "Controller.h"
 
 namespace {
 
-    class ControllerTest : public testing::Test {
+class ControllerTest : public testing::Test {
+public:
 
-        public:
+  project::Controller c;
 
-            project::Controller c;
+  ControllerTest() = default;
 
-            void SetUp() override {}
+  void SetUp() override {}
 
-    };
+};
 
-    TEST_F(ControllerTest, ValidRun) {
-       
-       ASSERT_FALSE(c.getHasExecuted());
-       c.run();
-       ASSERT_TRUE(c.getHasExecuted());
+TEST_F(ControllerTest, ValidRun) {
 
-    }
+  ASSERT_FALSE(c.getHasExecuted());
+  c.run();
+  ASSERT_TRUE(c.getHasExecuted());
+
+}
 
 } // namespace
